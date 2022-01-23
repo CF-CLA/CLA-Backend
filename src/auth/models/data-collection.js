@@ -10,7 +10,7 @@ class Collection {
 
   get(id) {
     if (id) {
-      return this.model.findOne({ where: { id: id } });
+      return this.model.findOne({ where: { username: id } });
     }
     else {
       return this.model.findAll({});
